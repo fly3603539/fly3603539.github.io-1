@@ -5,20 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>B05401071-江育儀</title>
+    <title>賽馬場</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <h1>哈囉</h1>
-    <a target="_framename" href="http://www.csie.ntu.edu.tw/~kmchao/bcc17spr/index.htm">計概網站</a>
-    <br>
-    <a target="_self" href="http://www.csie.ntu.edu.tw/~kmchao/bcc17spr/index.htm">計概網站</a>
-    <br>
-    <a target="_parent" href="http://www.csie.ntu.edu.tw/~kmchao/bcc17spr/index.htm">計概網站</a>
-    <br>
-    <a target="_top" href="http://www.csie.ntu.edu.tw/~kmchao/bcc17spr/index.htm">計概網站</a>
-<hr>
-    <img src="" alt="">
+
+    <div class="container">
+
+        <!--<div class="jumbotron">
+            <h1>賽馬場</h1>
+            
+        </div>-->
+        <div class="col-12 title">
+            <img style="height: 280px" src="./image/7.jpg" class="col-7 light" alt="賽馬場">
+        </div>
+        <div class="row form-money" id="money">
+            <lable class="col-5" style="text-align: right">資本:</lable>
+            <lable class="col-2">10000</lable>
+            <lable class="col-5" style="text-align: left">元</lable>
+        </div>
+        <div class="col-12 news" style="color:blue" id="news">風和日麗的一天</div>
+        <div class='row'>
+            <img src="./image/1.jpg" alt="馬1" class="col-2 horse">
+            <img src="./image/2.jpg" alt="馬2" class="col-2 horse">
+            <img src="./image/3.jpg" alt="馬3" class="col-2 horse">
+            <img src="./image/4.jpg" alt="馬4" class="col-2 horse">
+            <img src="./image/5.jpg" alt="馬5" class="col-2 horse">
+            <img src="./image/6.jpg" alt="馬6" class="col-2 horse">
+        </div>
+        <div class="row form-horse">
+            <div class="col-2">
+                <div class="horse">馬匹1</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">馬匹2</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">馬匹3</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">馬匹4</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">馬匹5</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">馬匹6</div>
+            </div>
+        </div>
+        <div class="row form-times">
+            <div class="col-2">
+                <div class="horse">賠率1.2X</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">賠率1.8X</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">賠率3.0X</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">賠率4.0X</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">賠率10.0X</div>
+            </div>
+            <div class="col-2">
+                <div class="horse">賠率30.0X</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <input class="form-control" type="number" min="0" step="100" value="0" id="horse1">元
+            </div>
+            <div class="col-2">
+                <input class="form-control" type="number" min="0" step="100" value="0" id="horse2">元
+            </div>
+            <div class="col-2">
+                <input class="form-control" type="number" min="0" step="100" value="0" id="horse3">元
+            </div>
+            <div class="col-2">
+                <input class="form-control" type="number" min="0" step="100" value="0" id="horse4">元
+            </div>
+            <div class="col-2">
+                <input class="form-control" type="number" min="0" step="100" value="0" id="horse5">元
+            </div>
+            <div class="col-2">
+                <input class="form-control" type="number" min="0" step="100" value="0" id="horse6">元
+            </div>
+        </div>
+        <div class="col-12 col-form-button1">
+            <button type="button" class="btn btn-primary">下注</button>
+        </div>
+        <div class="col-12 warn" id='warn'></div>
+
+        <div class="form-result row">
+            <label class="col-5 col-form-label" style="text-align: right" id='winloss'>贏得</label>
+            <div class="col-2">
+                <input class="form-control" type="text" id="remain" value="">
+            </div>
+            <div class="col-5" style="text-align: left">元</div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
