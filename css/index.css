@@ -1,0 +1,50 @@
+div.jumbotron {
+    background-color: #ffbe62;
+    text-align: center
+}
+
+div.form-money {
+    text-align: center;
+    margin-bottom: 2px;
+    font-size: 30px
+}
+
+div.form-result {
+    font-size: 30px
+}
+
+div.form-horse {
+    text-align: center;
+    margin-bottom: 0px
+}
+
+div.form-times {
+    text-align: center;
+    margin-bottom: 0px
+}
+
+label.col-form-horse {
+    text-align: center
+}
+
+div.col-form-button1 {
+    text-align: center;
+    margin-bottom: 30px
+}
+
+div.warn {
+    text-align: center
+}
+
+div.news {
+    text-align: center;
+    margin-bottom: 2px
+}
+
+img.horse {
+    height: 120px
+}
+
+div.title {
+    text-align: center
+}
